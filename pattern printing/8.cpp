@@ -1,13 +1,16 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main()
+{
     int n;
-    cout<<"enter the size ";
-    cin>>n;
-    for(int i=1;i<=n;i++){
-        for(int j=i;j<=n;j++){
-            cout<<j;
+    cout << "enter the size ";
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n - i + 1; j++)
+        {
+            cout << j;
         }
-        cout<<endl;
+        cout << endl;
     }
 }
