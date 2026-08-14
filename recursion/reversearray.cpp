@@ -2,7 +2,7 @@
 using namespace std;
 void reverse(int f, int arr[], int n)
 {
-    if (f <= n / 2)
+    if (f >= n / 2)
     {
         return;
     }
@@ -22,7 +22,11 @@ int main()
     {
         cout << arr[i];
     }
-    cout << "reversed array wil be";
     reverse(0, arr, n);
+    cout << "reversed array wil be";
+    for (int i = 0; i <= n; i++)
+    {
+        cout << arr[i];
+    }
     return 0;
 }
